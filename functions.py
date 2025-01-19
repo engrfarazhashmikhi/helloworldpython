@@ -56,6 +56,12 @@ class Functions:
             print("Total Per Month Namaz: ", round(total_month))
             print("Namaz Per Day: ", round(total_daY))
             print("\n")
+            
+    def costCalculator(self, total_price = 0.00, total_quantity = 0.00):
+        get_total_price = float(total_price)
+        get_total_quantity = float(total_quantity)
+        price_per_item = float(get_total_price / get_total_quantity)
+        return (price_per_item)
 
     def __del__(self):
 
